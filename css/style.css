@@ -60,7 +60,6 @@ body{
     color: var(--ecritureNoir);
     font-family: "ChristmasButtermilk";
     width: 1366px;
-    height: 768px;
     min-width: 500px;
     max-width: 1500px;
 }
