@@ -15,25 +15,34 @@ caption{
     font-size: 3vh;
     padding: 1vh;
 }
+caption:hover{
+    font-style: italic;
+}
 
 th[scope="col"]{
     background-color: var(--couleurF);
     border-radius: 2vh 2vh 0 0;
     color: var(--ecritureNoir);
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: normal;
 }
+
+th[scope="col"]:hover{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
 
 th[scope="row"]{
     width: 20vw;
     padding: 1vh;
     background-color: var(--couleurF);
-    border-radius: 2vh;
+    border-radius: 3.5vh;
     text-align: left;
     vertical-align: baseline;
 }
 
-#liste{
+#listeActivite{
     color: var(--ecritureNoir);
     
 }
@@ -50,8 +59,13 @@ tbody td{
 tbody p{
     padding: 5px;
     text-align: left;
-    font-size: 2vh;
+    font-size: 3vh;
+}
+
+tbody td:hover p{
+    padding: 5px;
     font-weight: bold;
+    font-size: 4vh;
 }
 
 tbody span{
@@ -124,12 +138,14 @@ span.byebye{
 
 details summary{
     margin: 3vh;
+    font-family: "ChickenPie";
+    font-size: 3vh;
 }
 
 tfoot tr td{
     height: 4vh;
     text-align: right;
-    font-size: 1.5vh;
+    font-size: 2vh;
     font-style: italic;
 }
 

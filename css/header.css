@@ -49,11 +49,12 @@ nav ul li a {
     border-radius: 15%;
     text-decoration: none;
     font-size: 3vh;
+    font-family: "ChickenPie";
 }
 
 ul li a:hover {
     background-color: var(--couleurG);
-    font-weight: bolder;
+    font-family: "ChickenPieHeight";
 }
 
 /****************** #BOUTON ******************/
