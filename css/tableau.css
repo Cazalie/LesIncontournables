@@ -1,0 +1,136 @@
+/*Je me suis aidée de ce site pour faire les évènements dans mon tableau
+https://www.blogduwebdesign.com/blog/graphisme/inspiration-graphique/calendriers-html-javascript.html*/
+
+
+/******************** Tableau ********************/
+table{
+    text-align: center;
+    color: var(--ecritureGris);
+}
+
+caption{
+    background-color: var(--couleurG);
+    border-radius: 3vh;
+    color: var(--ecritureNoir);
+    font-size: 3vh;
+    padding: 1vh;
+}
+
+th[scope="col"]{
+    background-color: var(--couleurF);
+    border-radius: 2vh 2vh 0 0;
+    color: var(--ecritureNoir);
+    font-size: 2vh;
+    font-weight: normal;
+}
+
+th[scope="row"]{
+    width: 20vw;
+    padding: 1vh;
+    background-color: var(--couleurF);
+    border-radius: 2vh;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+#liste{
+    color: var(--ecritureNoir);
+    
+}
+
+tbody td{
+    position: relative;
+    width: 7.5vw;
+    height: 11vh;
+    vertical-align: top;
+    border: 2px dotted var(--couleurF);
+    border-radius: 1vh;
+}
+
+tbody p{
+    padding: 5px;
+    text-align: left;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+tbody span{
+    position: absolute;
+    height: 1vh;
+    border-radius: 1vh;
+    font-size: 12px;
+    padding: 5px;
+}
+
+span.debut {
+    left: 2vw;
+    right: -1vw;
+}
+
+span.evenements {
+    left: -1vw;
+    right: -1vw;
+}
+
+span.evenement {
+    left: 1vw;
+    right: 1vw;
+}
+
+span.fin {
+    left: -1vw;
+    right: 2vw;
+}
+
+span.premierEvent{
+    top: 4vh;
+}
+
+span.deuxiemeEvent{
+    top: 6vh;
+}
+
+span.sapin {
+    background-color: lightgreen;
+}
+
+#sapin{
+    color: lightgreen;
+}
+
+span.marche{
+    background-color: lightcoral;
+}
+
+#marche{
+    color: lightcoral;
+}
+
+span.boxingday{
+    background-color: lightblue;
+}
+
+#boxingday{
+    color: lightblue;
+}
+
+span.byebye{
+    background-color: khaki;
+}
+
+#byebye{
+    color: khaki;
+}
+
+details summary{
+    margin: 3vh;
+}
+
+tfoot tr td{
+    height: 4vh;
+    text-align: right;
+    font-size: 1.5vh;
+    font-style: italic;
+}
+
+

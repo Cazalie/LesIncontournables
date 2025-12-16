@@ -1,0 +1,167 @@
+/************************* MAIN *************************/
+
+main h2{
+    font-size: 5.5vh;
+    padding-bottom: 3vh;
+    color: var(--ecritureBlanc);
+    font-family: "ChickenPie";
+}
+
+main p{
+    color: var(--ecritureNoir);
+}
+
+section{
+    width: 90vw;
+    padding-top: 12.5vh;
+    border: 5px solid var(--couleurH);
+    outline: 5px solid var(--couleurH);
+    outline-offset: -15px;
+    min-height: 100vh;
+}
+
+/************************* Accueil *************************/
+#accueil{
+    background-color: var(--couleurA);
+}
+
+#accueil p{
+    display: block;
+    border-bottom: 5px solid var(--couleurB);
+    font-size: 3vh;
+    padding: 3vh 0 1vh 0;
+}
+
+/******************** Restos et Activités ********************/
+#resto{
+    background-color: var(--couleurB);
+}
+
+#activites{
+    background-color: var(--couleurC);
+}
+
+.colone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.range{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lieu{
+    width: 40vw;
+    height: 35vh;
+    padding: 2.5%;
+    margin: 1%;
+    border: 2px dashed var(--couleurH);
+    border-radius: 5%;
+}
+
+.lieu figure img{
+    height: 25vh;
+    border-radius: 50%;
+    transition: transform 0.5s ease-out;
+}
+
+.lieu figure img:hover{
+    outline: 0.5vw solid var(--ecritureBlanc);
+    outline-offset: -1vw;
+    transform: skew(5deg, -5deg);
+}
+
+.lieu figure figcaption h3{
+    text-decoration: underline;
+    font-size: 3vh;
+}
+
+.lieu div p{
+    padding: 1vh 2vw;
+    font-size: 2vh;
+    text-align: left;
+    line-height: 1;
+    color: var(--ecritureGris);
+}
+
+.lieu div a{
+    color: var(--ecritureBlanc);
+}
+
+.lieu div p:last-child{
+    font-size: 2.25vh;
+}
+
+/******************** Galerie d'images ********************/
+#images{
+    background-color: var(--couleurD);
+}
+
+#images div{
+    display: flex;
+    padding: 0 10vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#images div img{
+    margin: 5vh 0;
+    width: 12.5vw;
+    border-radius: 5%;
+    transition: transform 0.5s ease-out;
+}
+
+#images div img:hover{
+    outline: 0.5vw solid var(--couleurD);
+    outline-offset: -1vw;
+    border-radius: 5%;
+    transform: scale(1.5);
+}
+
+/******************** Autres sections ********************/
+#evenements{
+    background-color: var(--couleurE);
+}
+
+#avis{
+    background-color: var(--couleurF);
+}
+
+/*********************** À propos ***********************/
+#aPropos{
+    min-height: 80vh;
+    background-color: var(--couleurG);
+}
+
+#aPropos div:first-child{
+    float: left;
+    width: 55vh;
+    height: 65vh;
+    background-image: url(../img/arbre_.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10%;
+    margin-left: 10vw;
+    margin-top: -5vh;
+}
+
+#aPropos div:first-child:hover{
+    background-image: url(../img/autoportrait.jpg);
+}
+#aPropos div:last-child{
+    float: right;
+    margin-right: 10vw;
+    width: 40vw;
+}
+
+#aPropos p{
+    text-align: center;
+    font-size: 3vh;
+}

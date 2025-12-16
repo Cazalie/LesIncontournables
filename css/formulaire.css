@@ -1,0 +1,112 @@
+form{
+    display: flex;
+    font-size: 2vh;
+    color: var(--ecritureNoir);
+}
+
+fieldset{
+    border: 2px dashed var(--couleurA);
+    border-radius: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+legend{
+    margin: 0 2vw;
+    text-align: left;
+    font-size: 3vh;
+}
+
+label{
+    display: block;
+    margin: 0;
+    text-align: left;
+    font-size: 2vh;
+}
+select:hover,
+input:hover{
+    opacity: 0.75;
+}
+
+fieldset>fieldset{
+    border: 2px dashed var(--couleurC);
+    border-radius: 5%;
+    margin: 2vh 2vw;
+}
+
+#colone1 {
+    width: 25vw;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#colone1 select,
+#colone1 input{
+    width: 15vw;
+    height: 4vh;
+    background-color: var(--ecritureBlanc);
+    border: 2px solid var(--couleurH);
+    border-radius: 1.5vh;
+    color: var(--ecritureGris);
+}
+
+#colone1 input[type="submit"]{
+    width: 20vw;
+    height: 5vh;
+    background-color: var(--couleurB);
+    border: 2px solid var(--couleurA);
+    border-radius: 2vh;
+}
+
+#colone2 {
+    width: 40vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+}
+
+#colone2 input[type="text"],
+#colone2 select,
+#colone2 input[type="textarea"]{
+    height: 4vh;
+    margin: 1vh 2vw;
+    background-color: var(--ecritureBlanc);
+    border: 2px solid var(--couleurH);
+    border-radius: 1.5vh;
+    color: var(--ecritureGris);
+}
+#colone2 input[type="text"]{
+    width: 30.5vw;
+    height: 5vh;
+}
+
+#colone2 select{
+    width: 18vw;
+    height: 5vh;
+    text-align: center;
+}
+
+#colone2 input[type="textarea"]{
+    width: 27.5vw;
+    height: 10vh;
+}
+
+fieldset>fieldset>fieldset{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+fieldset>fieldset>fieldset legend{
+    font-size: 2vh;
+    margin: 0;
+}

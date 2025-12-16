@@ -1,0 +1,79 @@
+
+/******************** HEADER ********************/
+header{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+}
+
+header img {
+    width: 10vw;
+    transition: transform 0.5s ease-out;
+}
+
+header img:hover{
+    transform: scale(1.5);
+}
+
+header h1{
+    color: var(--couleurG);
+    text-align: center;
+    font-family: "ChickenPieHeight";
+    font-size: 5vh;
+}
+
+/****************** NAVIGATION ******************/
+nav{
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    background-color: var(--couleurH);
+    z-index: 2;
+    box-shadow: 0 2px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--ecritureBlanc);
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 15%;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+ul li a:hover {
+    background-color: var(--couleurG);
+    font-weight: bolder;
+}
+
+/****************** #BOUTON ******************/
+#bouton img{
+    position: fixed;
+    width: 3vw;
+    height: 6vh;
+    bottom: 2vh;
+    right: 1vw;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.5s ease-out;
+}
+
+#bouton:hover img{
+    transform: scale(1.5);
+    bottom: 2vh;
+    right: 0.5vw;
+}
+
+#bouton:active img{
+    bottom: 3vh;
+}

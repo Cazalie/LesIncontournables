@@ -1,0 +1,92 @@
+/******************** FOOTER ********************/
+footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0 5vh;
+    min-height: 20vh;
+    color: var(--ecritureNoir);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 12px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+footer a {
+    font-size: 1.5em;
+    color: var(--ecritureNoir);
+}
+
+footer a:hover {
+    color: var(--ecritureGris);
+}
+
+footer p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+/*Div contact*/
+#contact {
+    width: 20%;
+}
+
+#contact img {
+    width: 61.5px;
+    height: 30px;
+    transition: transform 0.5s ease-out;
+}
+
+/*Div media*/
+#media {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+#reseaux{
+    display: flex;
+    flex-direction: row;
+}
+
+#reseaux img {
+    width: 40px;
+    height:40px;
+    margin: 0 5px;
+    transition: transform 0.5s ease-out;
+}
+#reseaux img:hover {
+    transform: rotate(180deg);
+}
+
+
+/*Div ref*/
+#ref{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+#ref img{
+    width: 55px;
+    height: 55px;
+    transition: transform 0.5s ease-out;
+}
+
+#contact img:hover,
+#ref img:hover{
+    transform: scale(1.5);;
+}
+
+#ref div{
+    text-align: left;
+}
