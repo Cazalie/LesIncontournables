@@ -64,18 +64,15 @@ fieldset>fieldset{
 
 #colone2 {
     width: 40vw;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: left;
+    align-items:center;
 }
 
 #colone2 input[type="text"],
 #colone2 select,
-#colone2 input[type="textarea"]{
+#colone2 textarea{
     height: 4vh;
     margin: 1vh 2vw;
     background-color: var(--ecritureBlanc);
@@ -94,7 +91,7 @@ fieldset>fieldset{
     text-align: center;
 }
 
-#colone2 input[type="textarea"]{
+#colone2 textarea{
     width: 27.5vw;
     height: 10vh;
 }

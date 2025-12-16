@@ -69,7 +69,8 @@ ul li a:hover {
 }
 
 #bouton:hover img{
-    transform: scale(1.5);
+    width: 4vw;
+    height: 6vh;
     bottom: 2vh;
     right: 0.5vw;
 }

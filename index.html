@@ -34,7 +34,6 @@
         <main> <!--Conteneur principale-->
             <a id="bouton" href="#top" ><img src="img/Fleche.png" alt="bouton"></a>
             <section id="accueil">
-                
                 <h2>Accueil</h2>
                 <p>TP2</p>
                 <p>Les Incontournables</p>
@@ -42,7 +41,7 @@
                 <p>582-1W1 – Mise en page Web</p>
                 <p>Techniques d’intégration multimédia</p>
                 <p>Collège de Maisonneuve</p>
-                <p>Adresse de la Github-page</p>
+                <p><a href="https://github.com/Cazalie/LesIncontournables.git">https://github.com/Cazalie/LesIncontournables.git</a></p>
                 <p>Automne 2025</p>
             </section>
             <section id="resto">
@@ -126,7 +125,7 @@
                             <div>
                                 <p><b>Adresse : </b>Centre-ville</p>
                                 <p><b>Prix : </b>Gratuit</p>
-                                <p><b>Site : </b><a href="https://montreal.ca/articles/reso-le-reseau-souterrain-de-montreal-13713"></a>https://montreal.ca/articles/reso-le-reseau-souterrain-de-montreal-13713</p>
+                                <p><b>Site : </b><a href="https://montreal.ca/articles/reso-le-reseau-souterrain-de-montreal-13713">https://montreal.ca/articles/reso-le-reseau-souterrain-de-montreal-13713</a></p>
                                 <p>Promenez-vous dans ce réseau qui relie la station Place-des-Art à Guy-Concordia en passant par la ligne orange à certains points</p>
                             </div>
                         </div>
@@ -140,7 +139,7 @@
                             <div>
                                 <p><b>Adresse : </b>Partout à Montréal</p>
                                 <p><b>Prix : </b>Gratuit</p>
-                                <p><b>Site : </b><a href="https://https://montreal.ca/sujets/ruelles-vertes.org/">https://montreal.ca/sujets/ruelles-vertes</a></p>
+                                <p><b>Site : </b><a href="https://montreal.ca/sujets/ruelles-vertes.org/">https://montreal.ca/sujets/ruelles-vertes</a></p>
                                 <p>Aménagé par et pour les citoyens, les ruelles vertes offre des endroits sécuritaires pour les familles tout en embellissant l'espace urbain.</p>
                             </div>
                         </div>
@@ -258,11 +257,11 @@
                         <legend>Donnez-nous vos avis sur les places et activités proposés</legend>
                         <fieldset id="colone1">
                             <legend>Identification</legend>
-                            <label for="nom">Nom : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtNom" placeholder=" Nom" required></label>
-                            <label for="prenom">Prénom : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="txtPrenom" placeholder=" Prénom"required></label>
-                            <label for="telephone">Téléphone : <input type="tel" placeholder=" _ _ _ - _ _ _ - _ _ _ _" name="txtTelephone"></label>
-                            <label for="courriel">Courriel : &nbsp;&nbsp;&nbsp;<input type="email" name="txtCourriel" required></label>
-                            <label for="genre">Genre : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="genre">
+                            <label for="nom">Nom : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="nom" type="text" name="txtNom" placeholder=" Nom" required></label>
+                            <label for="prenom">Prénom : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="prenom" type="text" name="txtPrenom" placeholder=" Prénom" required></label>
+                            <label for="telephone">Téléphone : <input id="telephone" type="tel" placeholder=" _ _ _ - _ _ _ - _ _ _ _" name="txtTelephone"></label>
+                            <label for="courriel">Courriel : &nbsp;&nbsp;&nbsp;<input id="courriel" type="email" name="txtCourriel" required></label>
+                            <label for="genre">Genre : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="genre" name="selectGenre">
                                 <option value="femme">Femme</option>
                                 <option value="homme">Homme</option>
                                 <option value="non_binaire">Non-binaire</option>
@@ -273,8 +272,8 @@
                         </fieldset>
                         <fieldset id="colone2">
                             <legend>Votre commentaire</legend>
-                                <label for="titre">Titre : <input type="text" name="txtTitre" placeholder="Entrez un titre" required></label>
-                                <label for="Avis">Sélectionnez un activité ou un restaurent <select name="activite">
+                                <label for="titre">Titre : <input id="titre" type="text" name="txtTitre" placeholder="Entrez un titre" required></label>
+                                <label for="selectActivite">Sélectionnez un activité ou un restaurent <select id="selectActivite" name="selectionActivite">
                                     <option value="avis1">Pho Viet Nam</option>
                                     <option value="avis2">Ganadara</option>
                                     <option value="avis3">3 Amigos</option>
@@ -284,28 +283,28 @@
                                     <option value="avis7">Montréal Souterrain</option>
                                     <option value="avis8">Musée ferroviaire canadien</option>
                                 </select></label>
-                                <label for="commentaire">Commentaire : <input type="textarea" name="txtCommentaire" placeholder="Votre avis" required></label>
-                                <fieldset class="choix" id="note">
+                                <label for="commentaire">Commentaire : <textarea id="commentaire" name="txtCommentaire" placeholder="Votre avis" required></textarea></label>
+                                <fieldset>
                                     <legend>Quel note laissez vous?</legend>
-                                    <label><input type="radio" name="note" id="note1"> &#9733;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <!--Symbole Étoile https://outils-javascript.aliasdmc.fr/encodage-caracteres-meteo-ciel/encode-caractere-2605-html-css-js-autre.html-->
-                                    <label><input type="radio" name="note" id="note2"> &#9733; &#9733;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                    <label><input type="radio" name="note" id="note3"> &#9733;&#9733;&#9733;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                    <label><input type="radio" name="note" id="note4"> &#9733;&#9733;&#9733;&#9733;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                    <label><input type="radio" name="note" id="note5"> &#9733;&#9733;&#9733;&#9733;&#9733;&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="note1"><input type="radio" name="note" id="note1"> &#9733;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <!--Symbole Étoile https://outils-javascript.aliasdmc.fr/encodage-caracteres-meteo-ciel/encode-caractere-2605-html-css-js-autre.html-->
+                                    <label for="note2"><input type="radio" name="note" id="note2"> &#9733; &#9733;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="note3"><input type="radio" name="note" id="note3"> &#9733;&#9733;&#9733;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="note4"><input type="radio" name="note" id="note4"> &#9733;&#9733;&#9733;&#9733;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="note5"><input type="radio" name="note" id="note5"> &#9733;&#9733;&#9733;&#9733;&#9733;&nbsp;&nbsp;&nbsp;</label>
                                 </fieldset>
-                                <fieldset class="points">
-                                    <legend>Points forts</legend>
-                                    <label><input type="checkbox" name="ptFort" id="fort1">Service</label>
-                                    <label><input type="checkbox" name="ptFort" id="fort2">Prix</label>
-                                    <label><input type="checkbox" name="ptFort" id="fort3">Qualité</label>
-                                    <label><input type="checkbox" name="ptFort" id="fort4">Non-applicable</label>
+                                <fieldset>
+                                    <label>Points forts :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="fort1"><input type="checkbox" name="ptFort" id="fort1">Service&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="fort2"><input type="checkbox" name="ptFort" id="fort2">Prix&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="fort3"><input type="checkbox" name="ptFort" id="fort3">Qualité&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="fort4"><input type="checkbox" name="ptFort" id="fort4">Non-applicable&nbsp;&nbsp;&nbsp;</label>
                                 </fieldset>
-                                <fieldset class="point">
-                                    <legend>Points faibles</legend>
-                                    <label><input type="checkbox" name="ptFaible" id="faible1">Service</label>
-                                    <label><input type="checkbox" name="ptFaible" id="faible2">Prix</label>
-                                    <label><input type="checkbox" name="ptFaible" id="faible3">Qualité</label>
-                                    <label><input type="checkbox" name="ptFaible" id="faible4">Non-applicable</label>
+                                <fieldset>
+                                    <label>Points faibles :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="faible1"><input type="checkbox" name="ptFaible" id="faible1">Service&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="faible2"><input type="checkbox" name="ptFaible" id="faible2">Prix&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="faible3"><input type="checkbox" name="ptFaible" id="faible3">Qualité&nbsp;&nbsp;&nbsp;</label>
+                                    <label for="faible4"><input type="checkbox" name="ptFaible" id="faible4">Non-applicable&nbsp;&nbsp;&nbsp;</label>
                                 </fieldset>
                         </fieldset>
                     </fieldset>
